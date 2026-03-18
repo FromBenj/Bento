@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Bento",
+  "version": "1.0",
+  "description": "Easy and structured like a Bento",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "backend.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Bento me!"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "web_accessible_resources": [{
+    "resources": ["components/*"],
+    "matches": ["<all_urls>"]
+  }]
+}
