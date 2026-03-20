@@ -88,7 +88,7 @@ body {
     cursor: pointer;
 }
 
-.drag-hover {
+.drop {
     filter: drop-shadow(0px 2px 3px #4dd6cd);
     opacity: 70%;
 }
@@ -101,6 +101,10 @@ body {
     background-color: var(--yellow-color);
     border: none;
     box-shadow: 0 0 3px #d9cb7a, -2px -2px 6px #f1f1d8;
+}
+
+.drop-mode *{
+    pointer-events: none;
 }
 
 

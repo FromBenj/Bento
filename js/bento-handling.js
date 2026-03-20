@@ -52,11 +52,13 @@ async function createBento(id, name, url) {
 }
 
 async function saveNewBento(id, name, url) {
+    const defaultSection = "bento";
     const {bentos: savedBentos = []} = await chrome.storage.local.get('bentos');
     savedBentos.push({
         id: id,
         url: url,
         name: name,
+        section: defaultSection
     });
 
     await chrome.storage.local.set({bentos: savedBentos});
@@ -96,6 +98,14 @@ function updateBentoName() {
     }
 }
 
+async function updateBentoCategory(id, newSection) {
+    const {bentos: savedBentos = []} = await chrome.storage.local.get('bentos');
+    const potentialBentos = savedBentos.filter(item => item.id === id);
+    if (!potentialBentos.length) return;
+     const bento = {...potentialBentos[0], section: newSection};
+
+     /// FIx this function, implement it,  then when starting, put the bento at the right section
+}
 
 function settleBentoSearch() {
     const searchInput = document.getElementById("bento-search-input");
