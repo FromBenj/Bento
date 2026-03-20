@@ -1,3 +1,5 @@
+import {updateBentoCategory} from './bento-handling.js';
+
 export function dragDropHandling() {
     bentoDragging();
     bentoDropping();
@@ -31,15 +33,16 @@ function bentoDropping() {
         sectionContainer.addEventListener("dragleave", () => {
             sectionContainer.classList.remove("drop-mode");
         });
-        sectionContainer.addEventListener("drop", (e) => {
+        sectionContainer.addEventListener("drop", async (e) => {
             e.preventDefault();
-            console.log("drag drop")
             sectionContainer.classList.remove("drop-mode");
             const bentoId = e.dataTransfer.getData("text/plain");
             const bentoElement = document.querySelector(`[data-id="${bentoId}"]`);
             if (bentoElement) {
                 const section = sectionContainer.querySelector('.panel-section');
                 section.append(bentoElement);
+                const newCategory = section.id;
+                await updateBentoCategory(bentoId, newCategory);
             }
         });
     })
