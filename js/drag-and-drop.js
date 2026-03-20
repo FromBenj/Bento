@@ -1,4 +1,4 @@
-import {updateBentoCategory} from './bento-handling.js';
+import {updateBentoCategory} from './naming-features.js';
 
 export function dragDropHandling() {
     bentoDragging();

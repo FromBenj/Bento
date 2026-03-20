@@ -19,15 +19,16 @@ body {
 }
 
 .section-container {
-    padding: 0 0.5rem 1rem 0.5rem;
-    margin-top: 1rem;
+    margin: 0 0.5rem 1rem 0.5rem
 }
 
 .panel-section-title {
     background-color: var(--blue-color);
     padding: 0.5rem 1rem;
     border-radius: 50px;
-    margin: 0;
+    margin-bottom: 1.3rem;
+    box-shadow: inset 20px 20px 60px #6f9b9c, inset -20px -20px 60px #a9e9c5;
+    color: var(--white-color);
 }
 
 #bento-area-title {
@@ -36,7 +37,8 @@ body {
     border-radius: 50px;
     padding: 0.8rem 0.5rem;
     text-align: center;
-    margin: 1rem 1rem 0.5rem 1rem;
+    margin: 1rem;
+    box-shadow: inset 20px 20px 60px #001267, inset -20px -20px 60px #97d1d4;
 }
 
 #url-input-area {
@@ -56,8 +58,26 @@ body {
 .panel-section {
     display: flex;
     flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 0.5rem;
+    margin: 0 1rem;
+}
+
+.bento {
+    margin-bottom: 0.45rem;
+    border-left: solid 0 #a8e3cb;
+    padding-left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.bento:hover {
+    border-left: solid thin #a8e3cb;
+    padding-left: 0.3rem;
+}
+
+.bento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.1rem;
 }
 
 .bento-link {
@@ -69,6 +89,7 @@ body {
     padding: 0.1rem;
     border-radius: 15px;
     white-space: break-spaces;
+    font-style: italic;
 }
 
 .url-name-container {
@@ -128,7 +149,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0.7rem;
+    margin-top: 0.2rem;
 }
 
 

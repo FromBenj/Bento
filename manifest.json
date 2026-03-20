@@ -26,8 +26,8 @@
   "commands": {
     "_execute_side_panel": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Y",
-        "mac": "Command+Shift+Y"
+        "default": "Ctrl+Shift+B",
+        "mac": "Command+Shift+B"
       },
       "description": "Open Bento side panel"
     }
