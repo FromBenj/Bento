@@ -1,4 +1,4 @@
-export function settleBentoSearch() {
+export function setSearchBar() {
     const searchInput = document.getElementById("bento-search-input");
     searchInput.addEventListener("input", () => {
         const bentos = document.querySelectorAll("#bento-container .bento");

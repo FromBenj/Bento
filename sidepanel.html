@@ -1,42 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
     <title>Bento</title>
-</head>
-<body>
-<div contenteditable="true" id="url-input-area">paste your link</div>
-<label for="bento-search-input"></label>
-<div class="d-flex">
-    <input class="search-input" id="bento-search-input" placeholder="Find…"/>
-</div>
-<div id="bento-container">
-    <div class="section-container">
+  </head>
+  <body>
+    <div id="catch-zone-container">
+      <img src="./icons/icon.svg" id="catch-zone" alt="Drop zone" title="Click to catch the current page!"/>
+    </div>
+    <label for="bento-search-input"></label>
+    <div class="d-flex">
+      <input class="search-input" id="bento-search-input" placeholder="Find…" />
+    </div>
+    <div id="bento-container">
+      <div class="section-container">
         <h2 id="bento-area-title">Bento</h2>
         <div class="panel-section" id="bento-area"></div>
         <div class="show-next-bentos"></div>
-    </div>
-    <div class="section-container">
+      </div>
+      <div class="section-container">
         <h3 class="panel-section-title">To read soon 📘</h3>
         <div class="panel-section" id="read-now"></div>
         <div class="show-next-bentos"></div>
-    </div>
-    <div class="section-container">
+      </div>
+      <div class="section-container">
         <h3 class="panel-section-title">Ideas 💡</h3>
         <div class="panel-section" id="ideas"></div>
         <div class="show-next-bentos"></div>
-    </div>
-    <div class="section-container">
+      </div>
+      <div class="section-container">
         <h3 class="panel-section-title">Tabs backup 💾</h3>
         <div class="panel-section" id="back-up"></div>
         <div class="show-next-bentos"></div>
+      </div>
     </div>
-</div>
-
-<script src="frontend.js" type="module"></script>
-</body>
+    <script src="frontend.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

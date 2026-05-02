@@ -4,3 +4,6 @@
 
 # Phpstorm
 .idea
+
+# VS Code
+.history/

@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     dragDropHandling();
 })
 
-console.log("frontend.js run! 🙌");
+console.log("frontend.js is running! 🙌");
